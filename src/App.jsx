@@ -42,7 +42,10 @@ const App = () => {
   }, []);
 
   return (
+
     <div>
+      <h1 className="title">🐱 Cat Gallery</h1>
+
       <button
         onClick={fetchCats}
         className={`reloadBtn ${loading ? "hidden" : ""}`}
@@ -55,6 +58,10 @@ const App = () => {
       {!loading && <Gallery images={images} onImageClick={setModalImage} />}
 
       <Modal imageUrl={modalImage} onClose={() => setModalImage(null)} />
+      <footer className="footer">
+        Made with ❤️ using React & TheCatAPI
+      </footer>
+
     </div>
   );
 };
