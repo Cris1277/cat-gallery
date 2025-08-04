@@ -106,4 +106,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Made with ❤️ using React and cats.
+Made with ❤️ using React and TheCatAPI by Cristian Serrano.
