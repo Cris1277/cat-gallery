@@ -1,4 +1,5 @@
-/* === Loader animation === */
+/* === Loader Animation === */
+/* Loader shown while images are preloading */
 #loader {
   width: 100px;
   height: 100px;
@@ -12,6 +13,7 @@
   z-index: 1000;
 }
 
+/* Keyframes to animate a rotating rectangle that morphs into a circle and back */
 @keyframes spinToCircle {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
@@ -27,7 +29,8 @@
   }
 }
 
-/* === Button === */
+/* === Refresh Button === */
+/* Styles for the "Refresh Cats" button */
 .reloadBtn {
   display: block;
   margin: 20px auto;
@@ -41,15 +44,18 @@
   transition: background-color 0.3s ease;
 }
 
+/* Hover effect for button */
 .reloadBtn:hover {
   background-color: #666;
 }
 
+/* Hides the button while loading */
 .reloadBtn.hidden {
   display: none;
 }
 
-/* === Gallery === */
+/* === Gallery Grid === */
+/* Container for displaying cat images in a responsive grid */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -61,12 +67,14 @@
   justify-items: center;
 }
 
+/* Force exactly 3 columns on medium and larger screens */
 @media (min-width: 768px) {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+/* Wrapper around each image */
 .gallery div {
   overflow: hidden;
   border-radius: 10px;
@@ -74,6 +82,7 @@
   width: 100%;
 }
 
+/* Image styling inside the gallery */
 .gallery img {
   width: 100%;
   height: 100%;
@@ -84,11 +93,13 @@
   cursor: pointer;
 }
 
+/* Slight zoom effect on hover */
 .gallery img:hover {
   transform: scale(1.05);
 }
 
-/* === Modal === */
+/* === Modal Styling === */
+/* Fullscreen dark background overlay for modal */
 .modal {
   display: flex;
   align-items: center;
@@ -102,6 +113,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Enlarged image shown in the modal */
 .modal-content {
   width: 80vmin;
   height: 80vmin;
@@ -110,6 +122,7 @@
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
+/* Close button (X) in the modal */
 .close {
   position: absolute;
   top: 30px;
@@ -121,11 +134,13 @@
   z-index: 2100;
 }
 
+/* Hover effect for close button */
 .close:hover {
   color: #ccc;
 }
 
-
+/* === Page Title === */
+/* Main page heading */
 .title {
   text-align: center;
   font-size: 2.2rem;
@@ -133,6 +148,8 @@
   color: #333;
 }
 
+/* === Footer === */
+/* Footer text below the gallery */
 .footer {
   text-align: center;
   padding: 30px 0;
