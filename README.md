@@ -82,30 +82,24 @@ You can get a free API key at [thecatapi.com/signup](https://thecatapi.com/signu
 ```bash
 npm run dev
 ```
-
 ---
 
-## ✅ Completed Requirements
+## 🔮 Future Improvements
 
-| Feature                                   | Status |
-|-------------------------------------------|--------|
-| 6-image grid from TheCatAPI              | ✅     |
-| Clickable modal to enlarge image         | ✅     |
-| Refresh button to load new cats          | ✅     |
-| Loader shown during image loading        | ✅     |
-| Responsive and aesthetic design          | ✅     |
-| Built with React + component structure   | ✅     |
-| API logic extracted into service file    | ✅     |
-| No external UI libraries used            | ✅     |
+Here are some ideas to enhance the project in future versions:
 
----
+- 🧑‍💼 **User login** and favorites system
+- 🗂️ Add **filtering or categorization** (e.g., breed, color, tags)
+- 🎥 Add **lazy loading** or **infinite scroll** for more dynamic galleries
+- 💾 **Save favorite cats** to localStorage or a backend
+- 🧭 Add **navigation bar** and multiple pages (About, Contact, etc.)
+- 🌙 Add **dark mode toggle**
+- 💬 Add **tooltips** or **accessibility improvements**
+- 📸 Allow users to **upload their own cat images**
+- ✨ Add **animations** on modal open/close or grid transitions
+- 🌍 **Internationalization (i18n)** support
 
-## 📸 Preview
-
-> _(Add screenshots or a preview GIF here if needed)_
-
----
-
+Feel free to fork the project and experiment!
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
